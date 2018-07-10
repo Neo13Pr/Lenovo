@@ -51,6 +51,8 @@ function MatrixRotationAxis(fAngle, fX, fY, fZ) {
     return mOut;
 }
 
+
+//final changes done. github uploaded
 function MatrixMultiply(mA, mB) {
         var mRet = Array();
         // Perform calculation on a dummy matrix (mRet)
