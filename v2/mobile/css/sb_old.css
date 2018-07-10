@@ -1,0 +1,1114 @@
+html,
+	body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+    background-color: #bfbec3;
+  -webkit-tap-highlight-color:rgba(255,0,0,0);
+ font-family: 'MyriadProLight';
+}
+
+body {
+  color: #fff;
+  padding: 0px;
+  font: 11px "MyriadProLight";
+  margin: 0px;
+  overflow: hidden;
+}
+#close {
+    position: absolute;
+    top: -531px;
+    left: 1145px;
+    display: none;
+}
+.switchView {
+   position: absolute;
+    bottom: 15px;
+    left: 145px;
+     color: #000; 
+    padding: 8px 30px;
+    height: 21px;
+    /* border: 1px solid #000; */
+    cursor: pointer;
+    font-size: 19px;
+    font-family: Audty1;
+    z-index: 1;
+    top: 15px;
+  /*  background-color: #000;*/
+}
+
+
+.switchViewext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+   /* color: #000;*/
+    padding: 8px 30px;
+    height: 21px;
+    /*border: 1px solid #000;*/
+    /*cursor: pointer;*/
+    font-size: 19px;
+     font-family: Audty1; 
+    z-index: 1;
+    top: 15px;
+   /* opacity: 0.2;*/
+     background-color: #000;
+}
+.fullScreenBox{    
+   right: 15px;
+    top: 15px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 3;
+    width: 32px;
+    height: 32px;
+}
+#reset{
+  right: 15px;
+  bottom: 15px;
+  visibility:hidden;
+  z-index: 3;
+}
+
+#loader {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  text-align: left;
+  padding: 0px 0px;
+  margin: 0px;
+  display: none;
+}
+/*#superblazeWrapper, #superblaze{
+  max-width: 1400px;
+}*/
+#scenediv {
+  /*position: absolute;*/
+  text-align: left;
+  padding: 0px 0px;
+  margin: 0;
+  width: 1200px;
+  height: 600px;
+  visibility: hidden;
+  /*max-width: 1400px;*/
+}
+
+#zoomSliderContainer {
+  position: absolute;
+ 
+}
+
+.ui-slider {
+  border: 1px solid #aaaaaa;
+  background: #ffffff;
+}
+
+.ui-slider .ui-widget-header {
+  background: #0083CA;
+}
+
+.ui-corner-all {
+  visibility: hidden;
+}
+
+.ui-slider .ui-slider-handle {
+      width: 12px;
+    height: 12px;
+  background: url(../images_gl/zoom_Dot.png) no-repeat;
+  overflow: hidden;
+  position: absolute;
+  left: -34px;
+  border-style: none;
+  outline: none;
+}
+
+.ui-slider-handle-hover {
+      width:41px;
+      height:16px;
+}
+
+.zoom {
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+
+#zoomInBtn {
+  background-image: url("../images_gl/plus_up.png");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: 44px 44px;
+  cursor: pointer;
+}
+
+#zoomInBtnActive {
+  background-image: url("../images_gl/plus_down.png");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: 44px 44px;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+#zoomOut {
+  left: -2px;
+  top: 161px;
+  cursor: pointer;
+}
+
+#zoomOutBtn {
+  background-image: url("../images_gl/minus_up.png");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: 44px 44px;
+  cursor: pointer;
+}
+#zoomOutBtnActive {
+  background-image: url("../images_gl/minus_down.png");
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: 44px 44px;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.btn{
+  position: absolute;
+  width: 49px;
+  height: 49px;
+  cursor: pointer;
+}
+.btn1{
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  z-index:3;
+
+
+}
+.btn2{
+    height: 34px;
+    width: 35px;
+    position: absolute;
+    cursor: pointer;
+}
+#resetBtn {
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+@font-face {
+    font-family: 'MyriadProLight';
+    src: url('fonts/MyriadPro-Light/gelrzbtyzsvqrtb.eot');
+    src: url('fonts/MyriadPro-Light/gelrzbtyzsvqrtb.eot') format('embedded-opentype'),
+         url('fonts/MyriadPro-Light/gelrzbtyzsvqrtb.woff') format('woff'),
+         url('fonts/MyriadPro-Light/gelrzbtyzsvqrtb.ttf') format('truetype'),
+         url('fonts/MyriadPro-Light/gelrzbtyzsvqrtb.svg#MyriadProLight') format('svg');
+}
+@font-face {
+    font-family: 'Audty1';
+    src: url('fonts/font1/AudiTypeV01-Normal-1.eot');
+    src: url('fonts/font1/AudiTypeV01-Normal-1.eot') format('embedded-opentype'),
+         url('fonts/font1/AudiTypeV01-Normal-1.woff') format('woff'),
+         url('fonts/font1/AudiTypeV01-Normal-1-Normal-1.woff2') format('woff2'),
+         url('fonts/font1/AudiTypeV01-Normal-1.ttf') format('truetype'),
+         url('fonts/font1/AudiTypeV01-Normal-1.svg#MyriadProLight') format('svg');
+}
+#mainText{
+    position: absolute;
+    left: 205px;
+    bottom: -22px;
+    color: black;
+    text-align: left;
+    }
+#colorText{
+  display: none;
+  position: absolute;
+  font-family: 'Audty1';
+  font-size: 17px;
+  width: 160px;  
+}
+#colorTextforcat5{
+  display: none;
+  position: absolute;
+  font-family: 'Audty1';
+  font-size: 17px;
+  width: 160px;  
+}
+#dropdown{
+       position: absolute;
+    left: 15px;
+    bottom: 15px;
+    width: 250px;
+    height: 40px;
+    background: black;
+    z-index:3;
+}
+#forClick{
+  position: absolute;
+    left: 0px;
+    bottom: 0px;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+}
+#text1{
+  font-family: Audty1;
+    position: absolute;
+    left: 20px;
+    top: -10px;
+    font-size: 19px;
+}
+#dropdownlist{
+    position: absolute;
+    left: 213px;
+    top: 12px;
+    cursor: pointer;
+
+}
+#list1{
+   display:none;
+    position: absolute;
+    left: 0px;
+    bottom: 40px;
+    width: 250px;
+    height: 0px;
+    background: white;
+}
+#one {
+    list-style-image: url('../images_gl/arrow.png');
+    font-size: 19px;
+    position: absolute;
+    bottom: -12px;
+    text-indent: 4px;
+    line-height: 1.8em;
+    color: black;
+    cursor: pointer;
+    width: 200px;
+    padding-left: 28px;
+}
+
+
+#cat5{
+  display: none;
+    list-style-type: none;
+    position: absolute;
+    width: 178px;
+    left: 0px;
+    top: -72px;
+    height: 51px;
+    background: #e7e9ea;
+    list-style-image: none;
+    font-size: 1.0em;
+    line-height: 2em;
+    text-indent: -19px;
+    color: black;
+    cursor: pointer;
+    padding-top: 10px;
+
+}
+
+#cat4{
+  display: none;
+    list-style-type: none;
+    position: absolute;
+    width: 178px;
+    left: 0px;
+    top: -122px;
+    height: 51px;
+    background: #e7e9ea;
+    list-style-image: none;
+    font-size: 1.0em;
+    line-height: 2em;
+    text-indent: -19px;
+    color: black;
+    cursor: pointer;
+    padding-top: 10px;
+
+}
+
+#two{
+  display: none;
+    list-style-type: none;
+    position: absolute;
+    width: 178px;
+    left: 0px;
+    top: -228px;
+    height: 51px;
+    background: #e7e9ea;
+    list-style-image: none;
+    font-size: 1.0em;
+    line-height: 2em;
+    text-indent: -19px;
+    color: black;
+    cursor: pointer;
+    padding-top: 10px;
+
+}
+#three{
+  display: none;
+     list-style-type: none;
+    position: absolute;
+    width: 178px;
+    left: 0px;
+    bottom: 153px;
+    height: 110px;
+    background: #e7e9ea;
+    list-style-image: none;
+    font-size: 12px;
+    line-height: 1.7em;
+    text-indent: -19px;
+    color: black;
+    cursor: pointer;
+    padding-top: 10px;
+}
+#four{
+  display: none;
+       list-style-type: none;
+    position: absolute;
+    width: 178px;
+    left: 0px;
+    top: -178px;
+    height: 70px;
+    background: #e7e9ea;
+    list-style-image: none;
+    font-size: 12px;
+    line-height: 1.7em;
+    text-indent: -19px;
+    color: black;
+    cursor: pointer;
+    padding-top: 10px;
+}
+#firstlist{
+    position: absolute;
+    top: -37px;
+}
+/*-----------colors1-------------*/
+#colors16 {
+    display: none;
+    position: absolute;
+    left: 13px;
+    bottom: -32px;
+    height: 30px;
+    width: 300px;
+}
+
+#colors17 {
+  display: none;
+  position: absolute;
+  left: 13px;
+  bottom: -32px;
+  height: 30px;
+  width: 300px;
+}
+#option33 {
+  left: 0px;      
+}
+#option33Btn {
+  overflow: hidden; 
+}
+#option33BtnActive {
+  overflow: hidden;  
+  visibility: hidden;   
+}
+#option34 {
+  left: 72px;      
+}
+#option34Btn {
+  overflow: hidden;     
+}
+#option34BtnActive {
+  overflow: hidden; 
+  visibility: hidden; 
+}
+#option35 {
+left: 144px;      
+}
+#option35Btn {
+  overflow: hidden;
+}
+#option35BtnActive {
+  overflow: hidden;  
+  visibility: hidden;
+}
+#forselectcolor17 {
+  display: none;
+  position: absolute;
+  left: 26px;
+  bottom: -23px;
+}
+
+
+
+#option30 {
+      left: 0px;      
+    }
+
+    #option30Btn {
+      overflow: hidden; 
+             
+    }
+    #option30BtnActive {
+      overflow: hidden;  
+       visibility: hidden;   
+    }
+      #option31 {
+      left: 72px;      
+    }
+
+    #option31Btn {
+      overflow: hidden;     
+    }
+    #option31BtnActive {
+      overflow: hidden; 
+     visibility: hidden; 
+    }
+      #option32 {
+      left: 144px;      
+    }
+    #option32Btn {
+      overflow: hidden;
+        
+    }
+    #option32BtnActive {
+      overflow: hidden;  
+      visibility: hidden;
+    }
+
+
+
+#colors1{
+  display: none;
+ position: absolute;
+    left: 13px;
+    bottom: -32px;
+    height: 30px;
+    width: 300px;
+}
+.btnC{
+  position: absolute;
+  width: 73px;
+  height: 35px;
+  cursor: pointer;
+  z-index:3;
+  top: 0px;
+}
+/*-----------colors1 -------------------*/
+ #option1 {
+      left: 0px;      
+    }
+
+    #option1Btn {
+      overflow: hidden; 
+             
+    }
+    #option1BtnActive {
+      overflow: hidden;  
+       visibility: hidden;   
+    }
+      #option2 {
+      left: 72px;      
+    }
+
+    #option2Btn {
+      overflow: hidden;     
+    }
+    #option2BtnActive {
+      overflow: hidden; 
+     visibility: hidden; 
+    }
+      #option3 {
+      left: 144px;      
+    }
+    #option3Btn {
+      overflow: hidden;
+        
+    }
+    #option3BtnActive {
+      overflow: hidden;  
+      visibility: hidden;
+    }
+
+    /*------Colors2-------*/
+    #colors2{
+    display: none;
+   position: absolute;
+    left: 13px;
+    bottom: -32px;
+    height: 30px;
+    width: 300px;
+}
+    #option4 {
+      left: 0px;      
+    }
+
+    #option4Btn {
+      overflow: hidden;     
+        
+    }
+    #option4BtnActive {
+      overflow: hidden;  
+     visibility: hidden;      
+    }
+      #option5 {
+      left: 73px;      
+    }
+
+    #option5Btn {
+      overflow: hidden;
+         
+    }
+    #option5BtnActive {
+      overflow: hidden; 
+     visibility: hidden;     
+    }
+      #option6 {
+      left: 145px;      
+    }
+    #option6Btn {
+      overflow: hidden;
+        
+    }
+    #option6BtnActive {
+      overflow: hidden;  
+      visibility: hidden;
+    }
+     #option7 {
+      left: 217px;      
+    }
+
+    #option7Btn {
+      overflow: hidden;          
+    }
+    #option7BtnActive {
+      overflow: hidden;  
+      visibility: hidden;  
+    }
+     #option29 {
+      left: 289px;      
+    }
+
+    #option29Btn {
+      overflow: hidden;          
+    }
+    #option29BtnActive {
+      overflow: hidden;  
+      visibility: hidden;  
+    }
+    /*------------colors3----------*/
+    #colors3{
+  display: none;
+ position: absolute;
+    left: 13px;
+    bottom: -32px;
+    height: 30px;
+    width: 300px;
+}
+  #option8 {
+      left: 0px;      
+    }
+
+    #option8Btn {
+      overflow: hidden;
+             
+    }
+    #option8BtnActive {
+      overflow: hidden; 
+     visibility: hidden; 
+    }
+     
+    /*----------colors4-------*/
+    #colors4{
+  display: none;
+ position: absolute;
+    left: 13px;
+    bottom: -32px;
+    height: 30px;
+    width: 300px;
+}
+ #option9 {
+      left: 0px;      
+    }
+    #option9Btn {
+      overflow: hidden;
+        
+    }
+    #option9BtnActive {
+      overflow: hidden;  
+      visibility: hidden;
+    }
+    
+    /*------------------colors5------------*/
+  /*  #colors5{
+  display: none;
+ position: absolute;
+    left: 13px;
+    bottom: -32px;
+    height: 30px;
+    width: 300px;
+}
+#option10 {
+      left: 0px;      
+    }
+
+    #option10Btn {
+      overflow: hidden;          
+    }
+    #option10BtnActive {
+      overflow: hidden;  
+      visibility: hidden;  
+    }*/
+      
+    /*--------------colors6----------------*/
+    #colors5{
+  display: none;
+ position: absolute;
+    left: 13px;
+    bottom: -32px;
+    height: 30px;
+    width: 300px;
+}
+#option11 {
+      left: 0px;      
+    }
+
+    #option11Btn {
+      overflow: hidden;
+        
+    }
+    #option11BtnActive {
+      overflow: hidden; 
+     visibility: hidden;      
+    }
+      #option12 {
+      left: 72px;      
+    }
+    #option12Btn {
+      overflow: hidden;
+        
+    }
+    #option12BtnActive {
+      overflow: hidden;  
+      visibility: hidden;
+    }
+    
+    /*----------------------colors7-----------------------*/
+    #colors6{
+  display: none;
+ position: absolute;
+    left: 13px;
+    bottom: -32px;
+    height: 30px;
+    width: 300px;
+}
+#option13 {
+      left: 0px;      
+    }
+
+    #option13Btn {
+      overflow: hidden;      
+         
+    }
+    #option13BtnActive {
+      overflow: hidden;  
+       visibility: hidden;  
+    }
+      #option14 {
+      left: 72px;      
+    }
+
+    #option14Btn {
+      overflow: hidden;
+              
+    }
+    #option14BtnActive {
+      overflow: hidden; 
+      visibility: hidden;
+     
+    }
+
+     
+    /*---------------------colors8----------------*/
+    #colors7{
+  display: none;
+ position: absolute;
+    left: 13px;
+    bottom: -32px;
+    height: 30px;
+    width: 300px;
+}
+ #option15 {
+      left: 0px;      
+    }
+    #option15Btn {
+      overflow: hidden;
+       
+    }
+    #option15BtnActive {
+      overflow: hidden;  
+       visibility: hidden;
+    }
+    #option16 {
+      left: 72px;      
+    }
+
+    #option16Btn {
+      overflow: hidden;          
+    }
+    #option16BtnActive {
+      overflow: hidden;  
+      visibility: hidden;  
+    }
+      #option17 {
+      left: 144px;      
+    }
+
+    #option17Btn {
+      overflow: hidden;
+             
+    }
+    #option17BtnActive {
+      overflow: hidden; 
+     visibility: hidden; 
+    }
+      #option18 {
+      left: 216px;      
+    }
+    #option18Btn {
+      overflow: hidden;
+        
+    }
+    #option18BtnActive {
+      overflow: hidden;  
+      visibility: hidden;
+    }
+    #option19 {
+      left: 288px;      
+    }
+
+    #option19Btn {
+      overflow: hidden;          
+    }
+    #option19BtnActive {
+      overflow: hidden;  
+      visibility: hidden;  
+    }
+      #option20 {
+      left: 360px;      
+    }
+
+    #option20Btn {
+      overflow: hidden;
+            
+    }
+    #option20BtnActive {
+      overflow: hidden; 
+     visibility: hidden;  
+    }
+   /*-------------colors 9----------------*/
+   #colors8{
+  display: none;
+ position: absolute;
+    left: 13px;
+    bottom: -32px;
+    height: 30px;
+    width: 300px;
+}
+ #option21 {
+    left: 0px;      
+  }
+  #option21Btn {
+      overflow: hidden;
+     
+    }
+  #option21BtnActive {
+      overflow: hidden; 
+       visibility: hidden;
+    }
+    /*-------------colors10-----------*/
+     #colors9{
+  display: none;
+ position: absolute;
+    left: 13px;
+    bottom: -32px;
+    height: 30px;
+    width: 300px;
+}
+ #option22 {
+    left: 0px;      
+  }
+  #option22Btn {
+      overflow: hidden;
+       
+    }
+  #option22BtnActive {
+      overflow: hidden; 
+      visibility: hidden;
+    }
+    /*---------------colors11-------------------*/
+     #colors10{
+  display: none;
+ position: absolute;
+    left: 13px;
+    bottom: -32px;
+    height: 30px;
+    width: 300px;
+}
+ #option23 {
+    left: 0px;      
+  }
+  #option23Btn {
+      overflow: hidden;
+     
+    }
+  #option23BtnActive {
+      overflow: hidden; 
+       visibility: hidden;
+    }
+    /*--------------colors12------------*/
+     #colors11{
+  display: none;
+ position: absolute;
+    left: 13px;
+    bottom: -32px;
+    height: 30px;
+    width: 300px;
+}
+ #option24 {
+    left: 0px;      
+  }
+  #option24Btn {
+      overflow: hidden;
+      
+    }
+  #option24BtnActive {
+      overflow: hidden; 
+      visibility: hidden;
+    }
+    /*------------------colors13-----------------*/
+     #colors12{
+  display: none;
+ position: absolute;
+    left: 13px;
+    bottom: -32px;
+    height: 30px;
+    width: 300px;
+}
+ #option25 {
+    left: 0px;      
+  }
+  #option25Btn {
+      overflow: hidden;
+      
+    }
+  #option25BtnActive {
+      overflow: hidden; 
+      visibility: hidden;
+    } 
+    /*---------------colors14-------------*/
+    #colors13{
+  display: none;
+ position: absolute;
+    left: 13px;
+    bottom: -32px;
+    height: 30px;
+    width: 300px;
+}
+ #option26 {
+    left: 0px;      
+  }
+  #option26Btn {
+      overflow: hidden;
+      
+    }
+  #option26BtnActive {
+      overflow: hidden;
+      visibility: hidden; 
+    }
+    /*------------------colors15--------------*/
+     #colors14{
+  display: none;
+ position: absolute;
+    left: 13px;
+    bottom: -32px;
+    height: 30px;
+    width: 300px;
+}
+ #option27 {
+    left: 0px;      
+  }
+  #option27Btn {
+      overflow: hidden;
+      
+    }
+  #option27BtnActive {
+      overflow: hidden; 
+      visibility: hidden;
+    }
+    /*---------------colors16-------------*/
+         #colors15{
+  display: none;
+ position: absolute;
+    left: 13px;
+    bottom: -32px;
+    height: 30px;
+    width: 300px;
+}
+ #option28 {
+    left: 0px;      
+  }
+  #option28Btn {
+      overflow: hidden;
+     
+    }
+  #option28BtnActive {
+      overflow: hidden; 
+       visibility: hidden;
+    }
+
+
+
+#forselectcolor16
+{
+  display: none;
+  position: absolute;
+  left: 26px;
+  bottom: -23px;
+}
+#forselectcolor1{
+  display: none;
+  position: absolute;
+  left: 320px;
+  bottom: -23px;
+}#forselectcolor2{
+  display: none;
+  position: absolute;
+  left: 26px;
+  bottom: -23px;
+}#forselectcolor3{
+  display: none;
+  position: absolute;
+  left: 26px;
+  bottom: -23px;
+}#forselectcolor4{
+  display: none;
+  position: absolute;
+  left: 26px;
+  bottom: -23px;
+}#forselectcolor5{
+  display: none;
+  position: absolute;
+  left: 26px;
+  bottom: -23px;
+}#forselectcolor6{
+  display: none;
+  position: absolute;
+  left: 26px;
+  bottom: -23px;
+}#forselectcolor7{
+  display: none;
+  position: absolute;
+  left: 26px;
+  bottom: -23px;
+}#forselectcolor8{
+  display: none;
+  position: absolute;
+  left: 26px;
+  bottom: -23px;
+}#forselectcolor9{
+  display: none;
+  position: absolute;
+  left: 26px;
+  bottom: -23px;
+}#forselectcolor10{
+  display: none;
+  position: absolute;
+  left: 26px;
+  bottom: -23px;
+}#forselectcolor11{
+  display: none;
+  position: absolute;
+  left: 26px;
+  bottom: -23px;
+}#forselectcolor12{
+  display: none;
+  position: absolute;
+  left: 26px;
+  bottom: -23px;
+}#forselectcolor13{
+  display: none;
+  position: absolute;
+  left: 26px;
+  bottom: -23px;
+}#forselectcolor14{
+  display: none;
+  position: absolute;
+  left: 26px;
+  bottom: -23px;
+}#forselectcolor15{
+  display: none;
+  position: absolute;
+  left: 26px;
+  bottom: -23px;
+}
+#first{
+position: absolute;
+    right: -80px;
+    bottom: 20px;
+    height: 33px;
+    width: 420px;
+    cursor: pointer;
+}
+#fan{
+   position: absolute;
+    left: 26px;
+}#fan1{
+ position: absolute;
+    left: 81px;
+}#fan2{
+       position: absolute;
+    left: 161px;
+}#fan3{
+    position: absolute;
+    left: 296px;
+}
+#logo{
+  position: absolute;
+    right: 20px;
+    top: 4px;
+}
+#design{
+        position: absolute;
+    left: 14px;
+    top: 20px;
+    height: 30px;
+    width: 266px;
+        /*z-index: 3;*/
+}
+}
+#exterior{
+       position: absolute;
+       cursor: pointer;
+}
+#interior{
+       position: absolute;
+    left: 130px;
+    cursor: pointer;
+    top: 0px;
+}
+
+#on {
+    position: absolute;
+    left: 161px;
+    display: block;
+}
+
+#off {
+    position: absolute;
+    left: 161px;
+    display: none;
+}
